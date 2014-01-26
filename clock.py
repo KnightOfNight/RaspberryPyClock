@@ -36,13 +36,13 @@ while True:
 		if Input.yesno(prompt = "Reboot?" , value = "no"):
 			display.message("Rebooting...")
 			os.system("/sbin/shutdown -r now")
-			time.sleep(300)
+			time.sleep(1)
 			exit(0)
 
 		if Input.yesno(prompt = "Shutdown?" , value = "no"):
 			display.message("Shutting down...")
 			os.system("/sbin/shutdown -h -P now")
-			time.sleep(300)
+			time.sleep(1)
 			exit(0)
 
 	t = int(time.time())
